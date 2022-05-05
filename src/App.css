@@ -1,6 +1,6 @@
-@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 body{
-  font-family: 'Gilroy-Regular';
+  font-family: 'Playfair Display', serif;
   letter-spacing: 0.5px;
 }
 .container {
