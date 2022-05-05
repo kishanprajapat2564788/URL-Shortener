@@ -1,0 +1,237 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+body{
+  font-family: 'Gilroy-Regular';
+  letter-spacing: 0.5px;
+}
+.container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-header h1 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.span-header-text{
+  color: rgb(237, 166, 36);
+}
+.input-header{
+  font-size: 2.0rem;
+}
+.input-field {
+  width: 100%;
+  padding:0.5rem 0.2rem 0.5rem 0;
+  text-indent: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: rgb(212, 206, 218);
+}
+.input-field-container {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.btnShorten{
+  padding: 0 1rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: none;
+  color: #fff;
+  background-color: rgb(237, 166, 36);
+  cursor: pointer;
+}
+/* result component */
+.result-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.result-field p {
+  color: #fff;
+  border: 1px solid rgb(237, 166, 36);
+  padding: 0.4rem 1rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+.resultBtn {
+  padding: 0.5rem 1rem;
+  color: #000;
+  cursor: pointer;
+  background: rgb(237, 166, 36);
+  border: none;
+  border-radius: 4px;
+}
+.result-copied{
+  color: #000;
+  background: rgb(89, 232, 67);
+  border-radius: 4px;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.copy-field {
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.loading{
+  color: #fff;
+  font-size: 20px;
+}
+
+/* background animate */
+@keyframes animate {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #4f53c9;
+  overflow: hidden;
+  z-index: -1;
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 39s linear infinite;
+}
+.background li:nth-child(0) {
+  left: 85%;
+  width: 139px;
+  height: 139px;
+  bottom: -139px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 72%;
+  width: 161px;
+  height: 161px;
+  bottom: -161px;
+  animation-delay: 1s;
+}
+.background li:nth-child(2) {
+  left: 53%;
+  width: 127px;
+  height: 127px;
+  bottom: -127px;
+  animation-delay: 6s;
+}
+.background li:nth-child(3) {
+  left: 81%;
+  width: 163px;
+  height: 163px;
+  bottom: -163px;
+  animation-delay: 3s;
+}
+.background li:nth-child(4) {
+  left: 39%;
+  width: 111px;
+  height: 111px;
+  bottom: -111px;
+  animation-delay: 3s;
+}
+.background li:nth-child(5) {
+  left: 71%;
+  width: 103px;
+  height: 103px;
+  bottom: -103px;
+  animation-delay: 25s;
+}
+.background li:nth-child(6) {
+  left: 82%;
+  width: 151px;
+  height: 151px;
+  bottom: -151px;
+  animation-delay: 4s;
+}
+.background li:nth-child(7) {
+  left: 15%;
+  width: 113px;
+  height: 113px;
+  bottom: -113px;
+  animation-delay: 4s;
+}
+.background li:nth-child(8) {
+  left: 15%;
+  width: 141px;
+  height: 141px;
+  bottom: -141px;
+  animation-delay: 22s;
+}
+.background li:nth-child(9) {
+  left: 38%;
+  width: 109px;
+  height: 109px;
+  bottom: -109px;
+  animation-delay: 27s;
+}
+.background li:nth-child(10) {
+  left: 70%;
+  width: 108px;
+  height: 108px;
+  bottom: -108px;
+  animation-delay: 42s;
+}
+.background li:nth-child(11) {
+  left: 88%;
+  width: 112px;
+  height: 112px;
+  bottom: -112px;
+  animation-delay: 17s;
+}
+.background li:nth-child(12) {
+  left: 31%;
+  width: 150px;
+  height: 150px;
+  bottom: -150px;
+  animation-delay: 17s;
+}
+.background li:nth-child(13) {
+  left: 7%;
+  width: 110px;
+  height: 110px;
+  bottom: -110px;
+  animation-delay: 21s;
+}
+.background li:nth-child(14) {
+  left: 60%;
+  width: 116px;
+  height: 116px;
+  bottom: -116px;
+  animation-delay: 30s;
+}
+.background li:nth-child(15) {
+  left: 47%;
+  width: 100px;
+  height: 100px;
+  bottom: -100px;
+  animation-delay: 64s;
+}
